@@ -65,7 +65,7 @@ A pointer to a <b>TP_WAIT</b> structure that defines the wait object. The <a hre
 
 ## -remarks
 
-The wait object is freed immediately if there are no outstanding callbacks; otherwise, the timer object is freed asynchronously after the outstanding callbacks complete.
+The wait object is freed immediately if there are no outstanding callbacks; otherwise, the wait object is freed asynchronously after the outstanding callbacks complete.
 
 In some cases, callback functions might run after <b>CloseThreadpoolWait</b> has been called. To prevent this behavior: 
 
